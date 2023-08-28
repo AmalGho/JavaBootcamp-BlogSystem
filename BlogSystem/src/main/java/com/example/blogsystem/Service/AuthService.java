@@ -3,6 +3,7 @@ package com.example.blogsystem.Service;
 import com.example.blogsystem.Model.User;
 import com.example.blogsystem.Repository.AuthRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -17,4 +18,6 @@ public class AuthService {
         user.setRole("USER");
         authRepository.save(user);
     }
+
+
 }

@@ -26,7 +26,7 @@ public class Blog {
     private String title;
 
     @NotEmpty(message = "blog body should not be empty")
-    @Length(min = 5, message = "blog body length should not be more than 200 characters")
+    @Length(max = 200, message = "blog body length should not be more than 200 characters")
     @Column(columnDefinition = "varchar(200) not null")
     private String body;
 
